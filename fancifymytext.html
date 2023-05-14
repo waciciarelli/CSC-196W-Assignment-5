@@ -4,7 +4,8 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
-		<script scr="fancifymytext.js"></script>
+		<script type="text/javascript" src="fancifymytext.js"></script>
+		
 		
 	</head>
 
@@ -16,14 +17,15 @@
 
 		<fieldset name="Text">
 			<label for="textbox">Enter Text:</label> <br />
-			<textarea name="textbox" id="textbox" cols="30" rows="4"></textarea>
+			<textarea name="textbox" id="textbox-1" cols="30" rows="4"></textarea>
 		</fieldset>
 
 		<fieldset name="Fancify">
-			<button name="btn1" onclick="bigger()">Bigger!</button><br />
-			<input type="radio" id="FancySchmancy" name="HowFancy" value="FancySchmancy" checked>
+			<button name="btn1" onclick="bigger()">Bigger!</button>
+			<button name="btn2" onclick="moo()">Moo</button><br />
+			<input type="radio" id="FancySchmancy" name="HowFancy" value="FancySchmancy" onchange="fancy()">
 			<label for="FancySchmancy">FancySchmancy</label><br>
-			<input type="radio" id="BoringBetty" name="HowFancy" value="BoringBetty">
+			<input type="radio" id="BoringBetty" name="HowFancy" value="BoringBetty" onchange="boring()">
 			<label for="BoringBetty">BoringBetty</label><br>
 		</fieldset>
 		
